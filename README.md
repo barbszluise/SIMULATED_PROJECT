@@ -1,117 +1,34 @@
-![Image](image.png)
-# 🏡 Real Estate SQL Project
+<div align="center">
 
-## 📌 Overview
+<img src="YOUR_BANNER_LINK_HERE" width="100%" />
 
-This project simulates a real estate management system using SQL.
+# Bárbara Luise
 
-The database stores:
-- clients
-- properties
-- sales transactions
+### `Data & Fraud Analyst`
 
-The goal of the project is to practice:
-- SQL queries
-- joins
-- aggregations
-- data relationships
-- dashboard visualization
+<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=22&pause=1000&color=C084FC&center=true&vCenter=true&width=600&lines=Turning+Data+into+Insights.;Detecting+Fraud+and+Reducing+Risk.;SQL+%7C+Python+%7C+Excel+%7C+Analytics" />
+
+</div>
 
 ---
 
-## 🛠 Technologies Used
+##  About Me
 
-- SQL
-- SQLite
-- DBeaver
-- Tableau
-- GitHub
+```yaml
+name: Bárbara Luise
+role: Data & Fraud Analyst
+location: Brazil
+focus:
+  - Fraud Detection
+  - Data Analytics
+  - Risk Analysis
+  - Business Intelligence
 
----
+currently_learning:
+  - Advanced SQL
+  - Python for Data Analysis
+  - Machine Learning
+  - Power BI
 
-## 🧩 Database Structure
-
-### Tables
-
-#### Clients
-Stores customer information.
-
-#### Properties
-Stores property details.
-
-#### Selling
-Stores sales transactions connecting clients and properties.
-
----
-
-## 🔑 Relationships
-
-```sql
-selling.client_id → clients.client_id
-
-selling.property_id → properties.id
-```
-
----
-
-## 📊 Example SQL Queries
-
-### Top clients by total spending
-
-```sql
-SELECT clients.name,
-SUM(selling.price) AS total_spent
-FROM selling
-JOIN clients
-ON selling.client_id = clients.client_id
-GROUP BY clients.name
-ORDER BY total_spent DESC;
-```
-
----
-
-### Properties by city
-
-```sql
-SELECT city,
-COUNT(*) AS total_properties
-FROM properties
-GROUP BY city;
-```
-
----
-
-## 📈 Dashboard
-
-The project was connected to Tableau to create visualizations such as:
-- top clients
-- sales by city
-- property status
-- total sales
-
----
-
-## 📂 Files Included
-
-- database.sql
-- clients.csv
-- properties.csv
-- selling.csv
-
----
-
-## 🚀 What I Learned
-
-During this project I practiced:
-- database modeling
-- SQL relationships
-- primary and foreign keys
-- joins and aggregations
-- dashboard integration
-- troubleshooting data connections
-
----
-
-## 👩‍💻 Author
-
-Barbara Rodovalho
+mission:
+  Turning data into strategic decisions and fraud prevention.
