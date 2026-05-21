@@ -56,11 +56,7 @@ mission:
 
 <br><br>
 
-<img src="https://img.shields.io/badge/PYTHON-111111?style=for-the-badge&logo=python&logoColor=C084FC"/>
-
 <img src="https://img.shields.io/badge/SQL-111111?style=for-the-badge&logo=postgresql&logoColor=C084FC"/>
-
-<img src="https://img.shields.io/badge/POWER_BI-111111?style=for-the-badge&logo=powerbi&logoColor=C084FC"/>
 
 <img src="https://img.shields.io/badge/EXCEL-111111?style=for-the-badge&logo=microsoftexcel&logoColor=C084FC"/>
 
