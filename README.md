@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="YOUR_BANNER_LINK_HERE" width="100%" />
+<img src="image.png" width="100%" />
 
 # Bárbara Luise
 
