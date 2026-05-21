@@ -1,3 +1,4 @@
+![Image](image.png)
 # 🏡 Real Estate SQL Project
 
 ## 📌 Overview
