@@ -11,11 +11,6 @@
 <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=24&pause=1000&color=C084FC&center=true&vCenter=true&width=700&lines=Turning+Data+Into+Insights.;Detecting+Fraud+And+Reducing+Risk.;SQL+%7C+Python+%7C+Excel+%7C+Analytics" />
 
 <br>
-
-<a href="https://www.linkedin.com/in/barbara-luise-silva-rodovalho-1173a0401/>"
-<img src="https://img.shields.io/badge/LINKEDIN-111111?style=for-the-badge&logo=linkedin&logoColor=C084FC"/>
-</a>
-
 <a href="mailto:blperitagrafotec@outlook.com">
 <img src="https://img.shields.io/badge/EMAIL-111111?style=for-the-badge&logo=gmail&logoColor=C084FC"/>
 </a>
