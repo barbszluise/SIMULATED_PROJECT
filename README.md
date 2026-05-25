@@ -100,7 +100,7 @@ mission:
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=YOURUSERNAME&bg_color=0d1117&color=C084FC&line=C084FC&point=ffffff&hide_border=true"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=barbszluise&bg_color=0d1117&color=C084FC&line=C084FC&point=ffffff&hide_border=true"/>
 
 </div>
 
