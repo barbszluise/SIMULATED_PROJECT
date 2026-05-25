@@ -45,12 +45,6 @@ mission:
 
 #  TECH STACK
 
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=python,mysql,postgres,github,vscode" />
-
-<br><br>
-
 <img src="https://img.shields.io/badge/SQL-111111?style=for-the-badge&logo=postgresql&logoColor=C084FC"/>
 
 <img src="https://img.shields.io/badge/EXCEL-111111?style=for-the-badge&logo=microsoftexcel&logoColor=C084FC"/>
