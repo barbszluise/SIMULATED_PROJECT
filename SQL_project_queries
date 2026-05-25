@@ -1,0 +1,46 @@
+========================================================= 
+REAL ESTATE ANALYTICS QUERIES 
+-- Bárbara Luise | Data Analyst Portfolio --
+=========================================================
+--  SALES WITH CLIENT NAMES -- 
+========================================================= 
+
+SELECT c.name 
+AS client_name, 
+p.address, 
+p.city, 
+s.price AS sale_price 
+FROM selling s 
+JOIN clients c 
+     ON s.client_id = c.client_id 
+JOIN properties p 
+     ON s.property_id = p.id;
+
+========================================================= 
+-- CLIENT PURCHASE HISTORY -- 
+=========================================================
+
+SELECT c.name, 
+COUNT(s.id) AS total_purchases, 
+SUM(s.price) AS total_spent 
+FROM clients c 
+JOIN selling s 
+     ON c.client_id = s.client_id 
+GROUP BY c.name 
+ORDER BY total_spent DESC;
+
+========================================================= 
+-- REAL ESTATE SALES REPORT --
+========================================================= 
+SELECT p.city, 
+COUNT(s.id) AS total_sales, 
+SUM(s.price) AS total_revenue 
+FROM selling s 
+JOIN properties p 
+     ON s.property_id = p.id 
+GROUP BY p.city 
+ORDER BY total_revenue DESC;
+
+========================================================= 
+-- END OF ANALYTICS QUERIES -- 
+=========================================================
