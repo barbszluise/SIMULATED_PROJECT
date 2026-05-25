@@ -12,7 +12,7 @@
 
 <br>
 
-<a href="[YOUR_LINKEDIN](https://www.linkedin.com/in/barbara-luise-silva-rodovalho-1173a0401/)">
+<a href="https://www.linkedin.com/in/barbara-luise-silva-rodovalho-1173a0401/>"
 <img src="https://img.shields.io/badge/LINKEDIN-111111?style=for-the-badge&logo=linkedin&logoColor=C084FC"/>
 </a>
 
