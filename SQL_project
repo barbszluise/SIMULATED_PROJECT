@@ -1,1 +1,57 @@
+============================================ -- FRAUD DETECTION DATABASE SCHEMA -- 
+Bárbara Luise | Data & Fraud Analyst 
+============================================ -- CREATE DATABASE --
+CREATE TABLE users (
+    user_id INTEGER PRIMARY KEY,
+    name TEXT,
+    country TEXT,
+    signup_date TEXT);
+
+INSERT INTO users (name, country, signup_date) VALUES 
+('Ana Souza', 'Brasil', '2026-04-20'),
+('Carlos Lima', 'Brasil', '2026-04-18'),
+('Juliana Alves', 'Brasil', '2026-04-14');
+
+
+CREATE TABLE clients (
+    client_id INTEGER PRIMARY KEY,
+    name TEXT,
+    phone TEXT,
+    e_mail TEXT,
+    average_investment REAL);
+
+INSERT INTO clients (name, phone, e_mail, average_investment) VALUES
+('Ana Souza', '11987654321', 'ana@email.com', 800000),
+('Carlos Lima', '11912345678', 'carlos@email.com', 300000),
+('Juliana Alves', '11955554444', 'juliana@email.com', 1200000);
+
+
+CREATE TABLE properties (
+    id INTEGER PRIMARY KEY,
+    address TEXT,
+    city TEXT,
+    type TEXT,
+    price REAL,
+    status TEXT);
+
+INSERT INTO properties 
+(address, city, type, price, status) VALUES
+('Rua A, 123', 'São Paulo', 'Apartamento', 350000, 'disponível'),
+('Av. Central, 500', 'Rio de Janeiro', 'Casa', 900000, 'vendido'),
+('Rua B, 45', 'Belo Horizonte', 'Apartamento', 250000, 'disponível');
+
+
+CREATE TABLE selling (
+    id INTEGER PRIMARY KEY,
+    client_id INTEGER,
+    property_id INTEGER,
+    price REAL,
+    
+    FOREIGN KEY (client_id) REFERENCES clients(client_id),
+    FOREIGN KEY (property_id) REFERENCES properties(id));
+
+INSERT INTO selling (client_id, property_id, price) VALUES
+(1, 1, 350000),
+(3, 2, 250000),
+(2, 3, 900000);
 
