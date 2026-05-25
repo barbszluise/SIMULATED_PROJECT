@@ -1,0 +1,61 @@
+========================================================= 
+-- FRAUD ANALYSIS QUERIES -- 
+Bárbara Luise | Data & Fraud Analyst 
+=========================================================
+-- FIND FRAUDULENT TRANSACTIONS -- 
+========================================================= 
+
+SELECT transaction_id,
+amount, 
+merchant_name, 
+location, 
+transaction_date 
+FROM transactions 
+WHERE is_fraud = TRUE;
+
+-- =======================================================
+-- HIGH VALUE TRANSACTIONS -- 
+==========================================================
+
+SELECT transaction_id, 
+amount, 
+merchant_name FROM transactions 
+WHERE amount > 5000 
+ORDER BY amount DESC;
+
+========================================================= 
+--  AVERAGE TRANSACTION VALUE -- 
+========================================================= 
+
+SELECT AVG(amount) AS average_transaction_value FROM transactions;
+
+========================================================= 
+-- CUSTOMERS WITH HIGH RISK LEVEL -- 
+=========================================================
+
+SELECT customer_id, 
+first_name, 
+last_name, 
+risk_level 
+FROM customers 
+WHERE risk_level = 'HIGH';
+
+========================================================= 
+-- LOGIN FAILURES --
+========================================================= 
+
+SELECT customer_id 
+ip_address, 
+login_time,
+FROM login_activity, 
+WHERE successful_login = FALSE;
+
+========================================================= 
+-- TRANSACTION COUNT BY LOCATION -- 
+========================================================= 
+
+SELECT location, 
+COUNT(*) AS total_transactions 
+FROM transactions 
+GROUP BY location 
+ORDER BY total_transactions DESC;
